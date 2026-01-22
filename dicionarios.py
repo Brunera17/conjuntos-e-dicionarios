@@ -41,3 +41,24 @@ dicionario_valido = {1: "um", "dois": 2, (3, 4): "par"}
 
 dicionario_invalido = {[1, 2]: "lista"} # Saída: TypeError: unhashable type: 'list'
 
+""" 
+Tipos permitidos para valores
+
+Os valores de um dicionário podem ser qualquer tipo de dado, incluindo:
+    Strings -> "nome"
+    Números (inteiros ou pontos flutuante) -> 1 ou 3.14
+    Tuplas -> (1,2,3)
+    Listas e dicionários -> [1,2,3] ou {"chave": "valor"}
+    Objetos personalizados -> Pessoa("Alice")
+"""
+
+# Exemplo
+dicionario = {
+    "nome": "João",
+    "idade": 25,
+    "notas": [10.0, 6.3, 7.5],
+    "endereco": {
+        "cidade": "São Paulo",
+        "bairro": "Centro"
+    }
+}
