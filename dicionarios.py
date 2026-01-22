@@ -24,3 +24,20 @@ dicionario = dict()
 """ 
 Um dicionário vazio pode ser criado usando {} ou dict(). Ele não contém nenhum par chave-valor inicialmente, mas pode ser preenchido conforme necessário.
 """
+""" 
+Tipos permitidos para chaves
+
+As chaves de um dicionário devem ser imutáveis. Isso significa que podem ser:
+    Strings -> "nome"
+    Números (inteiros ou ponto flutuante) -> 1 ou 3.14
+    Tuplas (desde que todos os elementos também sejam imutáveis) -> (1, 2, 3)
+Mas não podem ser:
+    Listas e dicionários, por serem mutáveis.
+"""
+
+# Exemplo
+
+dicionario_valido = {1: "um", "dois": 2, (3, 4): "par"}
+
+dicionario_invalido = {[1, 2]: "lista"} # Saída: TypeError: unhashable type: 'list'
+
