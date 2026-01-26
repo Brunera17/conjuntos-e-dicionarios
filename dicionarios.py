@@ -109,3 +109,19 @@ chaves = list(dicionario)    # Usada para obter todas as chaves do dicionário e
 print(chaves)
 
 dicionario.clear()    # Apaga todos os itens do dicionário.
+
+""" 
+Dicionários também permitem atualizar e remover elementos de diferente maneiras.
+"""
+
+# Considere
+dicionario = {"a": 1, "b": 2, "c": 3}
+
+dicionario.popitem()    # Remove e retorna o último par (chave, valor) inserindo. Se o dicionário estiver vazio, um KeyError é levantado.
+
+print(list(reversed(dicionario)))    # Retorna um iterador sobre as chaves do dicionaário em ordem reversa.
+
+dicionario.update({"a": 1.0, "d": 4})    # Atualiza o dicionário com outro mapeamento.
+
+copia = dicionario.copy()    # Retorna uma cópia rasa do dicionário.
+print(copia)
