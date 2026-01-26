@@ -62,3 +62,14 @@ dicionario = {
         "bairro": "Centro"
     }
 }
+
+dic = {"nome": "Ana", "nota": 10.0}
+
+dic["nome"]     # Acessar um valor por uma chave.
+                # nome_dicionario[chave] 
+
+dic["nota"]=9.2     # Atribui um valor de uma chave.
+                    # nome_dicionario[chave] = valor
+
+del dic["nome"]     # Remove um item específico
+                    # del nome_dicionario[chave]
