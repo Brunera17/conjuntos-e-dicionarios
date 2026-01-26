@@ -95,3 +95,17 @@ dicionario.items()    # Retorna pares (chave, valor) como tuplas.
 
 len(dicionario)    # Contar quantos pares (chave, valor) o dicionário possui.
 
+""" 
+Além de acessar valores, podemos buscar e modificar elementos.
+"""
+
+dicionario.get("nome")     # Obtem um valor sem erro se a chave não existir.
+dicionario.get("altura", "Não informado!")  # get(chave, padrão=None)
+
+dicionario.pop("idade")     # Remove uma chave e retorna seu valor. Se o padrão não for fornecido e a chave não estiver no dicionário, um KeyError é levantado.
+                            # pop(chave, padrão)
+                            
+chaves = list(dicionario)    # Usada para obter todas as chaves do dicionário em forma de lista
+print(chaves)
+
+dicionario.clear()    # Apaga todos os itens do dicionário.
