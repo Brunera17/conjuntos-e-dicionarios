@@ -73,3 +73,25 @@ dic["nota"]=9.2     # Atribui um valor de uma chave.
 
 del dic["nome"]     # Remove um item específico
                     # del nome_dicionario[chave]
+
+print("nome" in dic)    # Verifica se uma chave está presente no dicionário. Ele retorna True se a chave estiver e False caso contrário.
+print("idade" in dic)
+
+print("idade" not in dic) # Verifica se uma chave não está presente em um dicionário. ELe retorna True se a chave não estiver e False caso contrário.
+
+
+""" 
+Dicionários possuem diversos métodos para acessar seus dados e verificar seu tamanho.
+"""
+
+# Considere
+dicionario = {"nome": "João", "idade": 28}
+
+dicionario.key()    # Retorna as chaves do dicionário.
+
+dicionario.values()    # Retorna os valores do dicionário.
+
+dicionario.items()    # Retorna pares (chave, valor) como tuplas.
+
+len(dicionario)    # Contar quantos pares (chave, valor) o dicionário possui.
+
