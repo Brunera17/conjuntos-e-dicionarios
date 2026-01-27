@@ -19,7 +19,8 @@ comum = set()
 if not texto1.isdisjoint(texto2):
     for palavra in texto1:
         if palavra in texto2:
-            print(palavra)
+            comum.add(palavra)
+print(f"Palavras em comum: {', '.join(comum)}")
 # Ou
 
 comuns = texto1&texto2    # Pode ser usado 'texto1.intersection(texto2)'
