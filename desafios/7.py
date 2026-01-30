@@ -42,5 +42,8 @@ nova_qtd = int(input("Nova quantidade: "))
 
 if produto in estoque:
     estoque[produto]=nova_qtd
-
-print(estoque)
+    
+    print("Quantidade atualizada com sucesso! ")
+    print(estoque)
+else:
+    print("Produto não encontrado no estoque.")
