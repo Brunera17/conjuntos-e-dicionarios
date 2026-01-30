@@ -3,31 +3,44 @@ Ana percebeu que, após o cadastro inicial dos produtos, precisa atualizar a qua
 
 Exemplo de entrada:
 
+    estoque = { 
 
-estoque = { 
+        "Caderno universitário": 50, 
 
-    "Caderno universitário": 50, 
+        "Caneta azul": 120, 
 
-    "Caneta azul": 120, 
+        "Borracha branca": 30 
 
-    "Borracha branca": 30 
+    } 
 
-} 
-Copiar código
-Nome do produto a ser atualizado: Caneta azul 
+    Nome do produto a ser atualizado: Caneta azul 
 
-Nova quantidade: 150 
-Copiar código
+    Nova quantidade: 150 
+
 Saída esperada:
 
+    { 
 
-{ 
+        "Caderno universitário": 50, 
 
-    "Caderno universitário": 50, 
+        "Caneta azul": 150, 
 
-    "Caneta azul": 150, 
+        "Borracha branca": 30 
 
-    "Borracha branca": 30 
-
-} 
+    } 
 """
+
+
+estoque = {
+    "Caderno universitário": 50, 
+    "Caneta azul": 120, 
+    "Borracha branca": 30 
+}
+
+produto = input("Nome do produto a ser atualizado: ")
+nova_qtd = int(input("Nova quantidade: "))
+
+if produto in estoque:
+    estoque[produto]=nova_qtd
+
+print(estoque)
